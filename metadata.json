@@ -1,0 +1,6 @@
+{
+  "name": "PhytoGuard — Crop Disease Prediction Web App",
+  "description": "Full-stack MERN and CNN-based crop leaf disease identification platform with PlantVillage library, voice assistant, prediction history, and admin console.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

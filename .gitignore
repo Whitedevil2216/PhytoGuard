@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Python virtual environments & cache
+venv/
+.venv/
+ml-service/venv/
+ml-service/.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment variables & secrets (NEVER commit real .env files)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+client/.env
+server/.env
+ml-service/.env
+
+# Build outputs
+dist/
+client/dist/
+build/
+coverage/
+
+# Uploaded user images (keep folder via .gitkeep)
+uploads/*
+!uploads/.gitkeep
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Datasets & large trained model binaries (keep directory via .gitkeep)
+ml-service/dataset/
+ml-service/data/
+ml-service/models/*.h5
+ml-service/models/*.keras
+ml-service/models/*.tflite
+ml-service/models/*.pb
+!ml-service/models/.gitkeep
+
+# Logs & OS files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db

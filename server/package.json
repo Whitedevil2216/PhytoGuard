@@ -1,0 +1,33 @@
+{
+  "name": "crop-disease-prediction-server",
+  "version": "1.0.0",
+  "description": "Express + MongoDB REST API and security layer for PhytoGuard Crop Disease Prediction",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "seed:diseases": "node scripts/seedDiseases.js",
+    "seed:admin": "node scripts/seedAdmin.js",
+    "test": "vitest run tests"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.1",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.10.0",
+    "multer": "^2.5.0",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.3.0",
+    "supertest": "^7.3.1",
+    "vitest": "^5.0.5"
+  }
+}
